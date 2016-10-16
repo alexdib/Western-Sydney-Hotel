@@ -6,6 +6,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Owin;
 using Western_Sydney_Hotel.Models;
+using System.Data.SqlClient;
 
 namespace Western_Sydney_Hotel.Account
 {
@@ -24,6 +25,27 @@ namespace Western_Sydney_Hotel.Account
                 //string callbackUrl = IdentityHelper.GetUserConfirmationRedirectUrl(code, user.Id, Request);
                 //manager.SendEmail(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>.");
 
+                SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"|DataDirectory|\\WesternHotel.mdf\";Integrated Security=True");
+                string sql = "INSERT INTO [customers] ([username],[gname],[sname],[address],[suburb],[state],[postcode],[mobile])";
+                sql += " VALUES (@User, @Gname, @Sname, @Suburb, @Address, @State, @Postcode, @Mobile)";
+                SqlCommand cmd = new SqlCommand(sql, con);
+
+                cmd.Parameters.AddWithValue("@User", Email.Text);
+                cmd.Parameters.AddWithValue("@GName", Gname.Text);
+                cmd.Parameters.AddWithValue("@SName", Sname.Text);
+                cmd.Parameters.AddWithValue("@Address", Address.Text);
+                cmd.Parameters.AddWithValue("@Suburb", Suburb.Text);
+                cmd.Parameters.AddWithValue("@State", State.SelectedItem.Text);
+                cmd.Parameters.AddWithValue("@Postcode", Postcode.Text);
+                cmd.Parameters.AddWithValue("@Mobile", Mobile.Text);
+
+                using (con)
+                {
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                }
+
+                IdentityResult resultAdd = manager.AddToRole(manager.FindByEmail(Email.Text).Id, "customers");
                 signInManager.SignIn( user, isPersistent: false, rememberBrowser: false);
                 IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
             }

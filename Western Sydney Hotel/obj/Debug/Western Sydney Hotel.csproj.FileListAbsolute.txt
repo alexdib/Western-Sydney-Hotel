@@ -64,3 +64,69 @@ C:\Users\IMPERIUM\Dropbox\Western Sydney Hotel\Western Sydney Hotel\bin\Microsof
 C:\Users\IMPERIUM\Dropbox\Western Sydney Hotel\Western Sydney Hotel\obj\Debug\Western Sydney Hotel.csprojResolveAssemblyReference.cache
 C:\Users\IMPERIUM\Dropbox\Western Sydney Hotel\Western Sydney Hotel\obj\Debug\Western Sydney Hotel.dll
 C:\Users\IMPERIUM\Dropbox\Western Sydney Hotel\Western Sydney Hotel\obj\Debug\Western Sydney Hotel.pdb
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\roslyn\csc.exe
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\roslyn\System.Collections.Immutable.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\roslyn\System.Reflection.Metadata.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\roslyn\vbc.exe
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\roslyn\VBCSCompiler.exe
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\roslyn\VBCSCompiler.exe.config
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Western Sydney Hotel.dll.config
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Western Sydney Hotel.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Western Sydney Hotel.pdb
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Antlr3.Runtime.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\AspNet.ScriptManager.bootstrap.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\AspNet.ScriptManager.jQuery.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\EntityFramework.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\EntityFramework.SqlServer.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.Owin.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.Owin.Security.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.Owin.Security.Google.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.ScriptManager.WebForms.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.Web.Infrastructure.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Newtonsoft.Json.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Owin.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\System.Web.Optimization.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\System.Web.Providers.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\WebGrease.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\System.Web.Optimization.xml
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Antlr3.Runtime.pdb
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Newtonsoft.Json.xml
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\EntityFramework.xml
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\EntityFramework.SqlServer.xml
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\System.Web.Providers.xml
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.Owin.xml
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.Owin.Security.xml
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.Owin.Security.Google.xml
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\obj\Debug\Western Sydney Hotel.csprojResolveAssemblyReference.cache
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\obj\Debug\Western Sydney Hotel.dll
+D:\Uni Work\Web Systems Dev\Web Project\Western-Sydney-Hotel\Western Sydney Hotel\obj\Debug\Western Sydney Hotel.pdb

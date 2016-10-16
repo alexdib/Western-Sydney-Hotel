@@ -69,6 +69,18 @@
             </div>
         </div>
 
+        <div class="form-group">
+            <asp:Label runat="server" AssociatedControlID="Suburb" CssClass="col-md-2 control-label">Suburb</asp:Label>
+            <div class="col-md-10">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                    <asp:TextBox runat="server" ID="Suburb" CssClass="form-control input-md" placeholder="Suburb" />
+                </div>
+                <asp:RequiredFieldValidator runat="server" ControlToValidate="Suburb" Display="Dynamic"
+                    CssClass="text-danger" ErrorMessage="Suburb field is required." />
+            </div>
+        </div>
+
         <!-- State -->
         <div class="form-group">
             <asp:Label runat="server" AssociatedControlID="State" CssClass="col-md-2 control-label">State</asp:Label>

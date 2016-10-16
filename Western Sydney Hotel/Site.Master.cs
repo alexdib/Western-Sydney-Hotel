@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Web.UI.HtmlControls;
 using Microsoft.AspNet.Identity;
 
 namespace Western_Sydney_Hotel
@@ -69,7 +70,12 @@ namespace Western_Sydney_Hotel
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            HtmlGenericControl staffDiv = (HtmlGenericControl)loginView1.FindControl("staffLinks");
+            HtmlGenericControl userDiv = (HtmlGenericControl)loginView1.FindControl("userLinks");
+            if (HttpContext.Current.User.IsInRole("customers") && userDiv != null)
+                userDiv.Visible = true;
+            else if (HttpContext.Current.User.IsInRole("administrators") && staffDiv != null)
+                staffDiv.Visible = true;
         }
 
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
