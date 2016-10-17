@@ -259,6 +259,6 @@ C:\Users\IMPERIUM\Dropbox\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsof
 C:\Users\IMPERIUM\Dropbox\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\IMPERIUM\Dropbox\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\IMPERIUM\Dropbox\Western-Sydney-Hotel\Western Sydney Hotel\bin\Microsoft.Owin.Security.OAuth.xml
-C:\Users\IMPERIUM\Dropbox\Western-Sydney-Hotel\Western Sydney Hotel\obj\Debug\Western Sydney Hotel.csprojResolveAssemblyReference.cache
 C:\Users\IMPERIUM\Dropbox\Western-Sydney-Hotel\Western Sydney Hotel\obj\Debug\Western Sydney Hotel.dll
 C:\Users\IMPERIUM\Dropbox\Western-Sydney-Hotel\Western Sydney Hotel\obj\Debug\Western Sydney Hotel.pdb
+C:\Users\IMPERIUM\Dropbox\Western-Sydney-Hotel\Western Sydney Hotel\obj\Debug\Western Sydney Hotel.csprojResolveAssemblyReference.cache

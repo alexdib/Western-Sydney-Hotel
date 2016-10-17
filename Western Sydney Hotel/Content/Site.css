@@ -55,3 +55,13 @@ input[type="select"] {
 .nav > li > a:hover, .nav > li > a:focus {
     background-color: #357ebd !important;
 }
+
+th.sortasc a {
+   display:block; padding:0 4px 0 20px; 
+   background:url("../images/ascArrow.png") no-repeat;
+}
+
+th.sortdesc a {
+   display:block; padding:0 4px 0 20px; 
+  background:url("../images/descArrow.png") no-repeat;
+}
