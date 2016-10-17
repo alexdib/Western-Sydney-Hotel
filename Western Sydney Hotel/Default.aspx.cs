@@ -11,7 +11,18 @@ namespace Western_Sydney_Hotel
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (HttpContext.Current.User.IsInRole("customers"))
+            {
+                CustomersDiv.Visible = true;
+            }
+            else if (HttpContext.Current.User.IsInRole("administrators"))
+            {
+                AdministratorsDiv.Visible = true;
+            }
+            else
+            {
+                AnonymousDiv.Visible = true;
+            }
         }
     }
 }

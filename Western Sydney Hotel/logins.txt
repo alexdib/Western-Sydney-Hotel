@@ -1,0 +1,19 @@
+--------------------------
+START PAGE:
+--------------------------
+Default.aspx
+
+--------------------------
+LOGINS:
+--------------------------
+Username: alex@me.com 
+Password: Pa$$word1
+
+Username: mitchell@me.com 
+Password: Pa$$word1
+
+Username: lachlan@me.com 
+Password: Pa$$word1
+
+Username: admin@westernhotel.com
+Password: Pa$$word1
