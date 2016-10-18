@@ -15,19 +15,24 @@ namespace Western_Sydney_Hotel.Administrators
 
         }
 
+        
+
         protected void charttype_SelectedIndexChanged(object sender, EventArgs e)
         {
             String chType = charttype.SelectedValue;
             Chart1.Series["Series1"].ChartType = (SeriesChartType)Enum.Parse(typeof(SeriesChartType), chType);
+            Chart2.Series["Series1"].ChartType = (SeriesChartType)Enum.Parse(typeof(SeriesChartType), chType);
 
             String chDimension = chartdimension.SelectedValue;
             if (chDimension.Equals("3D"))
             {
                 Chart1.ChartAreas["ChartArea1"].Area3DStyle.Enable3D = true;
+                Chart2.ChartAreas["ChartArea1"].Area3DStyle.Enable3D = true;
             }
             else
             {
                 Chart1.ChartAreas["ChartArea1"].Area3DStyle.Enable3D = false;
+                Chart2.ChartAreas["ChartArea1"].Area3DStyle.Enable3D = false;
             }
         }
 
@@ -35,15 +40,18 @@ namespace Western_Sydney_Hotel.Administrators
         {
             String chType = charttype.SelectedValue;
             Chart1.Series["Series1"].ChartType = (SeriesChartType)Enum.Parse(typeof(SeriesChartType), chType);
+            Chart2.Series["Series1"].ChartType = (SeriesChartType)Enum.Parse(typeof(SeriesChartType), chType);
 
             String chDimension = chartdimension.SelectedValue;
             if (chDimension.Equals("3D"))
             {
                 Chart1.ChartAreas["ChartArea1"].Area3DStyle.Enable3D = true;
+                Chart2.ChartAreas["ChartArea1"].Area3DStyle.Enable3D = true;
             }
             else
             {
                 Chart1.ChartAreas["ChartArea1"].Area3DStyle.Enable3D = false;
+                Chart2.ChartAreas["ChartArea1"].Area3DStyle.Enable3D = false;
             }
         }
 

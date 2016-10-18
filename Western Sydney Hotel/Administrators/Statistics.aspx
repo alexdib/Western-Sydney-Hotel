@@ -61,6 +61,28 @@
             </asp:Chart>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\WesternHotel.mdf;Integrated Security=True" ProviderName="System.Data.SqlClient" SelectCommand="SELECT rooms.rid as RoomID, Count(*) As Bookings FROM rooms INNER JOIN bookings ON rooms.rid=bookings.rid GROUP BY rooms.rid"></asp:SqlDataSource>
 
+
+            <asp:Chart ID="Chart2" runat="server" DataSourceID="SqlDataSource2">
+                <Titles>
+                    <asp:Title Font="Times New Roman, 12pt, style=Bold" Text="Number of bookings per Month"></asp:Title>
+                </Titles>
+                <Series>
+                    <asp:Series Name="Series1" XValueMember="Month" YValueMembers="Bookings" ChartType="Column" IsValueShownAsLabel="true"></asp:Series>
+                </Series>
+                <ChartAreas>
+                    <asp:ChartArea Name="ChartArea1">
+                        <AxisX Title="Month"></AxisX>
+                        <AxisY Title="Bookings"></AxisY>
+                    </asp:ChartArea>
+                </ChartAreas>
+                <Legends>
+                    <asp:Legend BackColor="Transparent" Alignment="Center" Docking="Right" Font="Trebuchet MS, 8.25pt, style=Bold"
+                        IsTextAutoFit="true" Name="Default" LegendStyle="Column">
+                    </asp:Legend>
+                </Legends>
+            </asp:Chart>
+            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\WesternHotel.mdf;Integrated Security=True" ProviderName="System.Data.SqlClient" SelectCommand="SELECT rooms.rid as Month, Count(*) As Bookings FROM rooms INNER JOIN bookings ON rooms.rid=bookings.rid GROUP BY rooms.rid"></asp:SqlDataSource>
+
         </div>
     </div>
 

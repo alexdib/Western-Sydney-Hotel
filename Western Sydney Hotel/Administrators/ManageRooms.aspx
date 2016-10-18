@@ -7,6 +7,7 @@
 
             <h3>Manage Rooms</h3>
             Page Time: <%= DateTime.Now.ToString("T") %>
+            <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
 
             <asp:UpdatePanel ID="UpdatePanel" runat="server">
                 <ContentTemplate>
@@ -37,7 +38,7 @@
                         <EditItemTemplate>
                             <tr style="background-color: #999999;">
                                 <td>
-                                    <asp:Button ID="UpdateButton" runat="server" CommandName="Update" Text="Update" />
+                                    <asp:Button ID="UpdateButton" runat="server" CommandName="Update" Text="Update" CausesValidation="true" ValidationGroup="editValidate"/>
                                     <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="Cancel" />
                                 </td>
                                 <td>
@@ -45,15 +46,32 @@
                                 </td>
                                 <td>
                                     <asp:TextBox ID="levelTextBox" runat="server" Text='<%# Bind("level") %>' />
+                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="levelTextBox" Display="Dynamic"
+                                        CssClass="text-danger" ErrorMessage="The level field is required." ValidationGroup="editValidate"/>
+                                    <asp:RegularExpressionValidator runat="server" ControlToValidate="levelTextBox" Display="Dynamic"
+                                        CssClass="text-danger" ValidationExpression="[G123]{1}" ErrorMessage="Level can only be 'G','1','2' and '3'" ValidationGroup="editValidate"/>
                                 </td>
                                 <td>
                                     <asp:TextBox ID="bedsTextBox" runat="server" Text='<%# Bind("beds") %>' />
+                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="bedsTextBox" Display="Dynamic"
+                                        CssClass="text-danger" ErrorMessage="The beds field is required." ValidationGroup="editValidate"/>
+                                    <asp:RegularExpressionValidator runat="server" ControlToValidate="bedsTextBox" Display="Dynamic"
+                                        CssClass="text-danger" ValidationExpression="[123]{1}" ErrorMessage="Beds can only be '1','2' and '3'" ValidationGroup="editValidate"/>
                                 </td>
                                 <td>
                                     <asp:TextBox ID="orientationTextBox" runat="server" Text='<%# Bind("orientation") %>' />
+                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="orientationTextBox" Display="Dynamic"
+                                        CssClass="text-danger" ErrorMessage="The orientation field is required." ValidationGroup="editValidate"/>
+                                    <asp:RegularExpressionValidator runat="server" ControlToValidate="orientationTextBox" Display="Dynamic"
+                                        CssClass="text-danger" ValidationExpression="[NWSE]{1}" ErrorMessage="Orientation can only be 'N','W','S' and 'E'" ValidationGroup="editValidate"/>
                                 </td>
                                 <td>
                                     <asp:TextBox ID="priceTextBox" runat="server" Text='<%# Bind("price") %>' />
+                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="priceTextBox" Display="Dynamic"
+                                        CssClass="text-danger" ErrorMessage="The price field is required." ValidationGroup="editValidate"/>
+                                    <asp:RangeValidator runat="server" ControlToValidate="priceTextBox" Display="Dynamic"
+                                        CssClass="text-danger" Type="Double" MinimumValue="10.00" MaximumValue="1000.00" 
+                                        ErrorMessage="The range must be between 10.00 and 1000.00." ValidationGroup="editValidate"/>
                                 </td>
                             </tr>
                         </EditItemTemplate>
@@ -67,23 +85,44 @@
                         <InsertItemTemplate>
                             <tr style="">
                                 <td>
-                                    <asp:Button ID="InsertButton" runat="server" CommandName="Insert" Text="Insert" />
+                                    <asp:Button ID="InsertButton" runat="server" CommandName="Insert" Text="Insert" CausesValidation="true" ValidationGroup="insertValidate"/>
                                     <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="Clear" />
                                 </td>
                                 <td>
                                     <asp:TextBox ID="ridTextBox" runat="server" Text='<%# Bind("rid") %>' />
+                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="ridTextBox" Display="Dynamic"
+                                        CssClass="text-danger" ErrorMessage="The rid field is required." ValidationGroup="insertValidate"/>
+                                    <asp:RegularExpressionValidator runat="server" ControlToValidate="ridTextBox" Display="Dynamic"
+                                        CssClass="text-danger" ValidationExpression="[G123]{1}[0-9]{2}" ErrorMessage="RoomID must follow format FNN where F is 'G','1','2' or '3' and NN is two digit room number" ValidationGroup="insertValidate"/>
                                 </td>
                                 <td>
                                     <asp:TextBox ID="levelTextBox" runat="server" Text='<%# Bind("level") %>' />
+                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="levelTextBox" Display="Dynamic"
+                                        CssClass="text-danger" ErrorMessage="The level field is required." ValidationGroup="insertValidate"/>
+                                    <asp:RegularExpressionValidator runat="server" ControlToValidate="levelTextBox" Display="Dynamic"
+                                        CssClass="text-danger" ValidationExpression="[G123]{1}" ErrorMessage="Level can only be 'G','1','2' and '3'" ValidationGroup="insertValidate"/>
                                 </td>
                                 <td>
                                     <asp:TextBox ID="bedsTextBox" runat="server" Text='<%# Bind("beds") %>' />
+                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="bedsTextBox" Display="Dynamic"
+                                        CssClass="text-danger" ErrorMessage="The beds field is required." ValidationGroup="insertValidate"/>
+                                    <asp:RegularExpressionValidator runat="server" ControlToValidate="bedsTextBox" Display="Dynamic"
+                                        CssClass="text-danger" ValidationExpression="[123]{1}" ErrorMessage="Beds can only be '1','2' and '3'" ValidationGroup="insertValidate"/>
                                 </td>
                                 <td>
                                     <asp:TextBox ID="orientationTextBox" runat="server" Text='<%# Bind("orientation") %>' />
+                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="orientationTextBox" Display="Dynamic"
+                                        CssClass="text-danger" ErrorMessage="The orientation field is required." ValidationGroup="insertValidate"/>
+                                    <asp:RegularExpressionValidator runat="server" ControlToValidate="orientationTextBox" Display="Dynamic"
+                                        CssClass="text-danger" ValidationExpression="[NWSE]{1}" ErrorMessage="Orientation can only be 'N','W','S' and 'E'" ValidationGroup="insertValidate"/>
                                 </td>
                                 <td>
                                     <asp:TextBox ID="priceTextBox" runat="server" Text='<%# Bind("price") %>' />
+                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="priceTextBox" Display="Dynamic"
+                                        CssClass="text-danger" ErrorMessage="The price field is required." ValidationGroup="insertValidate"/>
+                                    <asp:RangeValidator runat="server" ControlToValidate="priceTextBox" Display="Dynamic"
+                                        CssClass="text-danger" Type="Double" MinimumValue="10.00" MaximumValue="1000.00" 
+                                        ErrorMessage="The range must be between 10.00 and 1000.00." ValidationGroup="insertValidate"/>
                                 </td>
                             </tr>
                         </InsertItemTemplate>
